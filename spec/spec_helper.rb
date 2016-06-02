@@ -96,3 +96,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+def view_path(relative_path)
+  File.join(TinyRails.root, 'spec/fixtures', relative_path)
+end

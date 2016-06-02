@@ -1,4 +1,4 @@
-require 'video'
+require_relative '../models/video'
 
 class VideosController < TinyRails::Controller
   def index

@@ -1,4 +1,5 @@
 require 'rack/test'
+require_relative '../app/controllers/videos_controller'
 
 RSpec.describe VideosApplication do
   include Rack::Test::Methods
@@ -11,9 +12,9 @@ RSpec.describe VideosApplication do
     expect(last_response.body).to eq('FIXME')
   end
 
-  xit 'responds with videos' do
+  it 'responds with videos' do
     get '/videos'
     expect(last_response).to be_ok
-    expect(last_response.body).to eq('Video #0, Video #1')
+    expect(last_response.body).to match('Video #0, Video #1')
   end
 end
