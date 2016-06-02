@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
 gem 'rack'
-gem 'rack-test'
+
+group :test do
+  gem 'rspec'
+  gem 'rack-test'
+  gem 'pry-byebug'
+end

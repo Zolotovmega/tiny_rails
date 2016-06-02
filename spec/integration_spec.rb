@@ -1,5 +1,4 @@
 require 'rack/test'
-require_relative '../app/controllers/videos_controller'
 
 RSpec.describe VideosApplication do
   include Rack::Test::Methods

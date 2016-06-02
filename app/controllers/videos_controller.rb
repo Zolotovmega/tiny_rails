@@ -1,5 +1,3 @@
-require_relative '../models/video'
-
 class VideosController < TinyRails::Controller
   def index
     @videos = Video.all
